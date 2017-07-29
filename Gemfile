@@ -11,6 +11,12 @@ gem 'rails', '~> 5.0.4'
 # Use postgresql as the database for Active Record
 gem 'simple_form'
 
+gem "figaro"
+
+gem "fog-aws"
+
+gem 'carrierwave', '~> 1.0'
+
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
