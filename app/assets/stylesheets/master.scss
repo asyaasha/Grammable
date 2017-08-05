@@ -1,6 +1,10 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+body {
+  background-color: #fafafa;
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -17,9 +21,7 @@
 .clear {
     clear: both;
 }
-body {
-  background-color: #fafafa;
-}
+
 .top-nav{
   background-color: white;
   border-bottom-color: #edeeee;
@@ -31,4 +33,5 @@ body {
 .brand {
   color: #125688;
   font-size: 30px;
+  font-family: 'Pacifico', cursive;
 }
