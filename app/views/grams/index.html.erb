@@ -5,6 +5,11 @@
     <%= image_tag gram.picture, class: 'img-fluid' %>
     <p>
       <%= gram.message %>
+       <div class="comments">
+      <h4>Comments</h4>
+       <% gram.comments.each do |comment|%>
+        <p><%=comment.message%></p>
+       <%end%>
     </p>
     <div class="gram-actions float-right">
       <% if current_user && current_user == gram.user %>
@@ -13,9 +18,6 @@
       <% end %>
     </div>
     <br class="clear-fix" />
-      <div class="comments">
-      <h3>Comments</h3>
-
       <h4>Add a comment</h4>
       <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
         <%= f.input :message %>
