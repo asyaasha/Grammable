@@ -1,8 +1,10 @@
-<h1>HII</h1>
-
+<br/>
+<br/>
+<div class="booyah-box col-10 offset-1">
 <% @grams.each do |gram| %>
-<div>
+<p>
   <%= gram.message %>
   <%= image_tag gram.picture %>
-</div>
+</p>
 <% end %>
+</div>
